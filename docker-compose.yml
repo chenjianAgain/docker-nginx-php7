@@ -6,7 +6,7 @@ nginx:
     - 80:80
   links:
     - php
-  volumes-from: 
+  volumes_from: 
     - app-data
     
 php:
@@ -14,7 +14,7 @@ php:
   container_name: php-container
   expose:
     - 9000
-  volumes-from: 
+  volumes_from: 
     - app-data
 
 app-data:
